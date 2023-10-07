@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(255, 255, 143);
+   }
+   
+   .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+   }
+   
+   
+   .birthdayCard {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+   }
+   
+   .cardFront {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    transition: .6s;
+   }
+   
+   .happy {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    transition: .1s;
+   }
+   
+   .doge {
+    position: absolute;
+   }
+   
+   .cheems4 {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    padding-left: 10px;
+   }
+   
+   .cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+   }
+   
+   p {
+    font-family: cursive;
+    margin: 15px 10px 10px 30px;
+    color: #333;
+   }
+   
+   .name {
+    position: absolute;
+    left: 150px;
+    /* top: 200px; */
+    color: #333;
+    text-decoration: underline;
+   }
+   
+   .back {
+    font-family: Tahoma, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 30px;
+    outline-color: #333;
+    outline-style: dashed;
+   }
+   
+   .birthdayCard:hover {
+    transform: perspective(2500px) rotate(5deg);
+   }
+   
+   .birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg);
+   }
+   
+   .birthdayCard:hover .happy {
+    visibility: hidden;
+   }
+   
+   
